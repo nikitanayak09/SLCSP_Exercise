@@ -1,0 +1,57 @@
+Requirements:
+
+- Python , Pandas , Numpy
+	Link to install Python :
+	https://www.python.org/downloads/
+	Once you have python(preferable Anaconda/miniconda) installed, install pandas and numpy
+	
+	conda install pandas
+	conda install numpy
+
+- File Paths declared in the program
+	ZIPS_CSV_PATH = "./input_data/zips.csv"
+	PLANS_CSV_PATH = "./input_data/plans.csv"
+	SLCSP_CSV_PATH = "./input_data/slcsp.csv"
+	
+	OUTPUT_SLCSP_CSV_PATH = "./Output_slcsp.csv"
+	This file contains the output with the rates for the desired zipcodes ONLY if you don't
+	 wish to update the original slcsp.csv file.
+	The program takes a user input to confirm the same
+
+	
+	In the Coding_Exersise dir, there is a folder called input_data that consists all the required
+	files. Kindly run the program from the Coding_Exercise directory by invoking
+	
+		python run_slcsp.py
+	
+Run the program :
+
+-     python run_slcsp.py -help   
+      
+      		To view the options
+
+
+- 	  python run_slcsp.py
+
+	 		This will print the zipcodes and the respective slcsp rates on 'stdout' and ask the user input
+	 		to either create a new file  OUTPUT_SLCSP_CSV_PATH or update the  SLCSP_CSV_PATH
+	
+	
+-     python run_slcsp.py zip1 zip2 . . 
+	
+			This will print the zipcodes and the respective slcsp rates of the zipcodes passed on the screen
+			and will also ask the user to input if they would like to write the full output to the
+			OUTPUT_SLCSP_CSV_PATH or update the  SLCSP_CSV_PATH
+	
+
+
+Notes:
+
+Thank you for taking the time to review my the assignment. It has been quite a learning experience.
+This is my first time using pandas and dataframes. To begin the the assignment, I started with python petl for ETL functions but
+I got stuck when I had to find the second smallest number. 
+Restarted by studying dataframes and what could be done with them. The code could surely be improved
+by using other methods like set() which I did try but there was a glitch one way or the other.
+I surely have done my best and would appreciate your feedback on what andwhere I could improve in my approach.
+Thank you!
+#TODO, TO learn : Pandas set(), aggregate(), transforming functions.
